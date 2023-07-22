@@ -38,9 +38,9 @@ function moveSpider(speed) {
    }, speed)
 }
 
-changeTime.addEventListener("mouseover", () => {
+changeTime.addEventListener("change", () => {
    clearInterval(moveSpiderInterval)
-   moveSpider(changeTime.value)
+   moveSpider(parseInt(changeTime.value))
 })
 moveSpider(speed)
 
